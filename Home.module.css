@@ -1,0 +1,345 @@
+.mainContent {
+  padding: 2rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.heroDescription {
+  text-align: center;
+  margin: 1rem 0 2rem;
+  color: var(--text-light);
+  font-size: 1.1rem;
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: var(--card-radius);
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.dashboardNav {
+  padding: 1.5rem;
+}
+
+.dashboardNav h2 {
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.navDesc {
+  color: var(--text-light);
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.navLinks {
+  display: flex;
+  flex-direction: column;
+}
+
+.navLink {
+  padding: 0.6rem 0;
+  color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+  font-weight: 500;
+}
+
+.navLink span {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+.navLink:hover {
+  color: var(--primary-color);
+}
+
+.featureSection {
+  background: var(--purple-gradient);
+  color: white;
+  padding: 2rem;
+  border-radius: var(--card-radius);
+  margin-bottom: 1.5rem;
+}
+
+.featureContent {
+  margin-bottom: 1rem;
+}
+
+.featureContent h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.featureContent p {
+  max-width: 600px;
+}
+
+.featureButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 200px;
+  margin-left: auto;
+}
+
+.featureButtons .btn {
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  color: var(--primary-color);
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.featureButtons .btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.mobileSection {
+  background: var(--blue-gradient);
+  color: white;
+  padding: 2rem;
+  border-radius: var(--card-radius);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.mobileMockup {
+  border: 8px solid white;
+  border-radius: 24px;
+  background-color: white;
+  width: 180px;
+  height: 320px;
+  overflow: hidden;
+  margin-right: 2rem;
+}
+
+.mockupContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  padding: 1rem 0.5rem;
+}
+
+.mockupContent h3 {
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.mobileContent {
+  flex: 1;
+}
+
+.mobileContent h2 {
+  margin-bottom: 0.5rem;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.whiteBtn {
+  background-color: white;
+  color: var(--secondary-color);
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+.outlineWhiteBtn {
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+.whiteBtn:hover, .outlineWhiteBtn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.articlesSection {
+  display: grid;
+  grid-template-columns: 1fr 250px;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.articlesMain h2 {
+  margin-bottom: 0.5rem;
+}
+
+.articleGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.articleCard {
+  padding: 1rem;
+  background-color: white;
+  border-radius: var(--card-radius);
+  box-shadow: var(--shadow);
+}
+
+.articleCard h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.articleCard p {
+  font-size: 0.8rem;
+  color: var(--text-light);
+}
+
+.browseLink {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--secondary-color);
+  font-weight: 500;
+}
+
+.browseLink:hover {
+  color: var(--primary-color);
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.categories h3, .newsletter h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.categoriesList {
+  list-style: none;
+}
+
+.categoriesList li {
+  margin-bottom: 0.5rem;
+}
+
+.newsletterForm {
+  margin-top: 1rem;
+}
+
+.newsletterForm input {
+  padding: 0.6rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.btnPrimary {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  display: inline-block;
+  transition: all 0.2s ease;
+  font-weight: 500;
+  text-align: center;
+  border: none;
+  width: 100%;
+}
+
+.btnSecondary {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  display: inline-block;
+  transition: all 0.2s ease;
+  font-weight: 500;
+  text-align: center;
+}
+
+.btnOutline {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  background-color: transparent;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  display: inline-block;
+  transition: all 0.2s ease;
+  font-weight: 500;
+  text-align: center;
+}
+
+.btnPrimary:hover, .btnSecondary:hover, .btnOutline:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.demoLoginSection {
+  padding: 1.5rem;
+}
+
+.loginButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.loginButtons .btn {
+  min-width: 120px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .mobileSection {
+    flex-direction: column;
+  }
+
+  .mobileMockup {
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .articlesSection {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    margin-top: 1.5rem;
+  }
+
+  .articleGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .featureButtons {
+    margin: 0;
+    max-width: 100%;
+    margin-top: 1rem;
+  }
+}

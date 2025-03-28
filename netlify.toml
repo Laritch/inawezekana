@@ -1,0 +1,31 @@
+[build]
+  command = "bun run build"
+  publish = ".next"
+
+[build.environment]
+  NEXT_USE_NETLIFY_EDGE = "true"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[images]
+  remote_images = ["https://same-assets.com/.*"]
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Content-Security-Policy = "frame-ancestors 'none'"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/api/*"
+  [headers.values]
+    Cache-Control = "public, max-age=60, stale-while-revalidate=300"
+
+[[headers]]
+  for = "/_next/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
